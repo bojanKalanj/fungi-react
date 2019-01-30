@@ -35,15 +35,14 @@ const Header = () => {
                     alignRight
                     title="Bojan"
                     id="dropdown-menu-align-right"
+                    variant="success"
                     >
                     <Link className="dropdown-item" to="/user">
                         Moj profil
                     </ Link>
-                    <Dropdown.Item eventKey="2">Moji nalazi</Dropdown.Item>
-                    <Dropdown.Item eventKey="3">Dodaj nalaz</Dropdown.Item>
                     <Dropdown.Divider />
                     <Dropdown.Item eventKey="4">Odjavi se</Dropdown.Item>
-                    </DropdownButton>
+                </DropdownButton>
                 </Nav>
             </Navbar.Collapse>
             </Container>
