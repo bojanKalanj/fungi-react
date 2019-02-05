@@ -8,6 +8,7 @@ import Observation from './components/pages/Observation/Observation';
 import Species from './components/pages/Species/Species';
 import User from './components/pages/User/User';
 import Header from './components/shared/Header';
+import Login from './components/pages/Login/Login';
 
 const App = () => {
     return (
@@ -15,12 +16,13 @@ const App = () => {
             <BrowserRouter>
                 <div>
                     <Header />
-                        <Container>
-                            <Route path="/" exact component={Home} />
-                            <Route path="/observation" exact component={Observation} />
-                            <Route path="/species" exact component={Species} />
-                            <Route path="/user" exact component={User} />
-                        </Container>
+                    <Container style={{ marginTop: '30px', marginBottom: '30px', maxWidth: '80%' }}>
+                        <Route path="/" exact component={Home} />
+                        <Route path="/observation" exact component={Observation} />
+                        <Route path="/species" exact component={Species} />
+                        <Route path="/user" exact component={User} />
+                        <Route path="/login" exact component={Login} />
+                    </Container>
                 </div>
             </BrowserRouter>
         </div>

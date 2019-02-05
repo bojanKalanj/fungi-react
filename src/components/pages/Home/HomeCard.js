@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const HomeCard = () => {
     return(
-        <Card style={{ marginTop: '30px' }}>
+        <Card style={{ marginBottom: '30px' }}>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
                 <Card.Title>fungi shroom</Card.Title>

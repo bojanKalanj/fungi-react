@@ -10,41 +10,44 @@ import Dropdown from 'react-bootstrap/Dropdown';
 const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Container>
-            <Link className="navbar-brand" to="/">
-                Logo
-            </ Link>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                </Nav>
-                <Nav>
-                <Link className="nav-link" to="/species">
-                    Sve vrste
+            <Container style={{ maxWidth: '80%' }}>
+                <Link className="navbar-brand" to="/">
+                    Logo
                 </ Link>
-                <Link className="nav-link" to="/observation">
-                    Observation
-                </ Link>
-                <Link className="nav-link" to="/observation">
-                    Uputstvo
-                </ Link>
-                <Link className="nav-link" to="/observation">
-                    O nama
-                </ Link>
-                <DropdownButton
-                    alignRight
-                    title="Bojan"
-                    id="dropdown-menu-align-right"
-                    variant="success"
-                    >
-                    <Link className="dropdown-item" to="/user">
-                        Moj profil
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto">
+                    </Nav>
+                    <Nav>
+                    <Link className="nav-link" to="/species">
+                        Sve vrste
                     </ Link>
-                    <Dropdown.Divider />
-                    <Dropdown.Item eventKey="4">Odjavi se</Dropdown.Item>
-                </DropdownButton>
-                </Nav>
-            </Navbar.Collapse>
+                    <Link className="nav-link" to="/observation">
+                        Observation
+                    </ Link>
+                    <Link className="nav-link" to="/observation">
+                        Uputstvo
+                    </ Link>
+                    <Link className="nav-link" to="/observation">
+                        O nama
+                    </ Link>
+                    <Link className="nav-link" to="/login">
+                        Prijavi se
+                    </ Link>
+                    <DropdownButton
+                        alignRight
+                        title="Bojan"
+                        id="dropdown-menu-align-right"
+                        variant="success"
+                        >
+                        <Link className="dropdown-item" to="/user">
+                            Moj profil
+                        </ Link>
+                        <Dropdown.Divider />
+                        <Dropdown.Item eventKey="4">Odjavi se</Dropdown.Item>
+                    </DropdownButton>
+                    </Nav>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     )

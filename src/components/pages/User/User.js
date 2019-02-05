@@ -8,11 +8,11 @@ import UserObservations from './UserObservations/UserObservations';
 
 const User = () => {
     return (
-        <div style={{ marginTop: '30px' }}>
-        <Row>
-            <Col xs='4'><UserCard /></Col>
-            <Col xs='8'><UserObservations /></Col>
-        </Row>
+        <div>
+            <Row>
+                <Col xs='4'><UserCard /></Col>
+                <Col xs='8'><UserObservations /></Col>
+            </Row>
         </div>
     )
 }
